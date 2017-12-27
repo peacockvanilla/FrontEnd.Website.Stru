@@ -86,6 +86,8 @@
     <Content Include="timeline\partials\_mixins.scss" />
     <Content Include="timeline\partials\_variables.scss" />
     <Content Include="timeline\scss\style.scss" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -105,6 +107,8 @@
     <Content Include="css\flexslider.css" />
     <Content Include="css\style.css" />
     <Content Include="css\YTPlayer.css" />
+    <Content Include="fliptimer\fliptimer.css" />
+    <Content Include="fliptimer\jquery.fliptimer.js" />
     <Content Include="fonts\font-awesome.css" />
     <Content Include="fonts\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -159,6 +163,11 @@
     <Content Include="owlcarousel\css\owl.transitions.css" />
     <Content Include="owlcarousel\js\owl.carousel.js" />
     <Content Include="owlcarousel\js\owl.carousel.min.js" />
+    <None Include="Scripts\jquery-3.2.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="timeline\css\reset.css" />
     <Content Include="timeline\css\style.css" />
     <Content Include="timeline\img\cd-icon-location.svg" />

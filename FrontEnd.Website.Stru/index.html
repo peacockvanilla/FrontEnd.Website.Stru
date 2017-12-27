@@ -29,13 +29,19 @@
         <!--<script src="timeline/js/modernizr.js"></script>-->
         <script src="js/modernizr-2.8.3.min.js"></script>
 		<!-- Style CSS -->
-		<link rel="stylesheet" href="/css/style.css">				
+		<link rel="stylesheet" href="/css/style.css">	
+        
+        <!--fliptimer--> 
+        <link href="fliptimer/fliptimer.css" rel="stylesheet" />
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="fliptimer/jquery.fliptimer.js"></script>
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+    
 	</head>
 	
     <body data-spy="scroll" data-offset="80">
@@ -333,7 +339,7 @@
                 </div><!--- END ROW -->
             </div>
         </section>
-        <!--ICO COuntdown End-->
+        <!--ICO Roadmap End-->
 
         <section id="cd-timeline" class="timelineBackground">
             <div id="container">
@@ -406,6 +412,28 @@
         </section>
         <!--END TIMELINE-->
 
+        <!--ICO COuntdown-->
+          <!--ICO COUNTDOWN-->
+        <section id="icoCountdownPanel" class="our_service">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section-title">
+                            <h2>ICO COuntdown</h2>
+                            <span></span>
+                            <p><!--Structure Token is .--></p>
+                        </div>
+                    </div><!--- END COL -->
+                </div><!--- END ROW -->
+            </div>
+            
+        </section>
+        <section id="countdownTimer" class="buy_now">
+            <div class="countdown"></div>
+        </section>
+        <!--END ICO COUNTDOWN-->
+        <!--End ICOCOUNTDOWN-->
+
 		<!-- START COMPANY PARTNER LOGO  -->
 		<section class="partner-logo section-padding">
 			<div class="container">
@@ -434,7 +462,7 @@
 		</section>
 		<!-- END COMPANY PARTNER LOGO -->
 
-		
+        
 		
 		
 		<!-- START FOOTER TOP -->
@@ -477,9 +505,23 @@
 		
 		<!-- scripts js -->
 			<script src="/js/scripts.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
         <script src="timeline/js/main.js"></script>
-        
+        <link href="fliptimer/fliptimer.css" rel="stylesheet" />
+        <script src="fliptimer/jquery.fliptimer.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function () {
+
+                    //Countup timer
+                    $(".countdown").flipTimer({
+                        date: "2017/12/20 00:00:00",
+                        timeZone: -5,	//Time zone of New York
+                        past: true
+                       
+                    });
+
+                });
+        </script>
         <!-- jquery flexslider min js -->
         <script src="/js/jquery.flexslider-min.js"></script>	
     </body>
