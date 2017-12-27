@@ -586,6 +586,11 @@ text-transform: uppercase;
     background: #222 none repeat scroll 0 0;
     padding: 60px 0;
 }
+
+.timelineBackground {
+    background: #080808 none repeat scroll 0 0;
+    padding: 60px 0;
+}
 .buy_now_title {
 color: #fff;
 font-size: 40px;
@@ -1007,6 +1012,11 @@ transition: all 0.3s ease 0s;
 .footer {
 background: #222 none repeat scroll 0 0;
 padding:30px 0;
+}
+
+.footer2 {
+    background: #808080 none repeat scroll 0 0;
+    padding: 30px 0;
 }
 /*START FOOTER SOCIAL DESIGN*/
 .footer_social {float: right;}

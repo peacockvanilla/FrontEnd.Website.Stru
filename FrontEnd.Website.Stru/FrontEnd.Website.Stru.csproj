@@ -80,6 +80,12 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="timeline\img\.DS_Store" />
+    <Content Include="timeline\js\.DS_Store" />
+    <Content Include="timeline\partials\_layout.scss" />
+    <Content Include="timeline\partials\_mixins.scss" />
+    <Content Include="timeline\partials\_variables.scss" />
+    <Content Include="timeline\scss\style.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -153,11 +159,19 @@
     <Content Include="owlcarousel\css\owl.transitions.css" />
     <Content Include="owlcarousel\js\owl.carousel.js" />
     <Content Include="owlcarousel\js\owl.carousel.min.js" />
+    <Content Include="timeline\css\reset.css" />
+    <Content Include="timeline\css\style.css" />
+    <Content Include="timeline\img\cd-icon-location.svg" />
+    <Content Include="timeline\img\cd-icon-movie.svg" />
+    <Content Include="timeline\img\cd-icon-picture.svg" />
+    <Content Include="timeline\js\main.js" />
+    <Content Include="timeline\js\modernizr.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
