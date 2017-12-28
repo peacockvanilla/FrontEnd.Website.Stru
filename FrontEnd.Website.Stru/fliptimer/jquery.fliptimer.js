@@ -1,6 +1,6 @@
 /**************************************************************************
  * Project:		FlipTimer - jQuery Countdown Timer
- * Info:		https://themeforest.net/user/athenastudio
+ * Info:		https://codecanyon.net/item/fliptimer-jquery-countdown-timer/21154062
  * Version:		1.0
  * Author: 		AthenaStudio
  * Profile: 	https://themeforest.net/user/athenastudio
@@ -39,12 +39,15 @@
 			secondText:"Seconds",
 			
 			//Flip style
-			bgColor:"#333",
-			dividerColor:"#000",
-			digitColor:"#fff",
-			textColor:"#666",
+			bgColor:"#333333",
+			dividerColor:"#000000",
+			digitColor:"#ffffff",
+			textColor:"#666666",
 			borderRadius:6,
 			boxShadow:true,
+			
+			//Multi color
+			multiColor:false,
 			
 			//Timer on finish function
 			onFinish:function() {}
@@ -86,10 +89,24 @@
 			var secondTextNumber = 2;
 			
 			//Flip size
+			var $flip;
+			var $flipVal;
 			var flipCount = 0;
 			var size = 0;
 			var elementSize = 0;
 			var flipWidth = 60;
+			
+			//Multi color
+			var maxR = parseInt(options.bgColor.slice(1, 3), 16);
+			var maxG = parseInt(options.bgColor.slice(3, 5), 16);
+			var maxB = parseInt(options.bgColor.slice(5, 7), 16);
+			var R = maxR;
+			var G = maxG;
+			var B = maxB;
+			var addR = 0;
+			var addG = 0;
+			var addB = 0;
+			var intervalColorId = null;
 			
 			//Timer on finish function
 			var onFinish = typeof(options.onFinish)=="function" ? options.onFinish : function() {};
@@ -136,6 +153,13 @@
 				//Flip style
 				this.findSize();
 				this.flipStyle();
+				
+				//Multi color
+				if (options.multiColor) {
+					this.intervalColorId = setInterval(function() {
+						that.changeColor();
+					}, 16);
+				}
 				
 				//Start timer
 				this.intervalId = setInterval(function() {
@@ -240,7 +264,7 @@
 			
 			//Flip style
 			this.flipStyle = function() {
-				var $flip = $container.find("ul");
+				$flip = $container.find("ul");
 				
 				var w = parseInt(elementSize*flipWidth, 10),
 					h = parseInt(elementSize*flipWidth*1.3, 10),
@@ -269,11 +293,13 @@
 				});		
 				
 				//Digit
-				$flip.find(".flip-val").css({
+				$flipVal = $flip.find(".flip-val");
+				
+				$flipVal.css({
 					"background":options.bgColor,
 					"color":options.digitColor,
 					"border-radius":options.borderRadius
-				});				
+				});		
 				
 				//Down
 				$flip.find(".flip-down").css({
@@ -303,6 +329,37 @@
 				$before.find(".flip-val").text(changeNumber);
 				$before.removeClass("before").addClass("active");
 				$active.removeClass("active").addClass("before");
+			};
+			
+			//Multi color
+			this.changeColor = function() {
+				R += addR;
+				G += addG;
+				B += addB;
+				
+				if ((R*addR>=maxR*addR) && (G*addG>=maxG*addG) && (B*addB>=maxB*addB)) {
+					var color;
+					
+					R = maxR;
+					G = maxG;
+					B = maxB;
+					
+					color = maxR;
+					
+					maxR = maxG;
+					maxG = maxB;
+					maxB = color;
+					
+					addR = (maxR-R)/1000;
+					addG = (maxG-G)/1000;
+					addB = (maxB-B)/1000;
+				}
+				
+				var newColor = "rgba("+Math.floor(R)+", "+Math.floor(G)+", "+Math.floor(B)+", 1)";
+				
+				$flipVal.css({
+					"background":newColor
+				});
 			};
 			
 			//Check current time
@@ -450,6 +507,7 @@
 			
 			//On finish event handler
 			this.onFinish = function() {};
+			
 		}
 	};
 		
