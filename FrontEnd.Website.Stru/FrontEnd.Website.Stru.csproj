@@ -112,6 +112,7 @@
     <Content Include="fonts\font-awesome.css" />
     <Content Include="fonts\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\icons\font-awesome.min.css" />
     <Content Include="img\bg\Final-1.jpg" />
     <Content Include="img\bg\slide1.jpg" />
     <Content Include="img\bg\slide2.jpg" />
@@ -123,6 +124,8 @@
     <Content Include="img\Exchanges\2ea90511-2a83-49ca-80a3-bce23b727855.jpg" />
     <Content Include="img\Exchanges\3-coinexchange.png" />
     <Content Include="img\Exchanges\5-bittrex.png" />
+    <Content Include="img\ico\Coin details with token image.png" />
+    <Content Include="img\ico\Round details with token image.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\logo\Slogo.png" />
     <Content Include="img\map_pin.png" />
