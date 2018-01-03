@@ -80,6 +80,19 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Table\css\bee-style.css" />
+    <Content Include="Table\css\bootstrap.min.css" />
+    <Content Include="Table\css\font-awesome.min.css" />
+    <Content Include="Table\css\pe-icon-7-stroke.css" />
+    <Content Include="Table\fonts\fontawesome-webfont.svg" />
+    <Content Include="Table\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Table\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Table\img\bg-img\bg-5.jpg" />
+    <Content Include="Table\img\bg-img\spa-1.jpg" />
+    <Content Include="Table\img\bg-img\spa-2.jpg" />
+    <Content Include="Table\img\bg-img\spa-3.jpg" />
+    <Content Include="Table\js\bootstrap.min.js" />
+    <Content Include="Table\js\jquery-2.2.4.min.js" />
     <Content Include="timeline\img\.DS_Store" />
     <Content Include="timeline\js\.DS_Store" />
     <Content Include="timeline\partials\_layout.scss" />
@@ -88,6 +101,18 @@
     <Content Include="timeline\scss\style.scss" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <Content Include="Table\fonts\fontawesome-webfont.eot" />
+    <Content Include="Table\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Table\fonts\fontawesome-webfont.woff" />
+    <Content Include="Table\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Table\fonts\FontAwesome.otf" />
+    <Content Include="Table\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Table\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Table\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Table\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Table\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Table\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Table\fonts\Pe-icon-7-stroke.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
