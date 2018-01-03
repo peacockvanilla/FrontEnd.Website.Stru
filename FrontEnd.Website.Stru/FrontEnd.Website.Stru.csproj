@@ -113,6 +113,7 @@
     <Content Include="Table\fonts\Pe-icon-7-stroke.eot" />
     <Content Include="Table\fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="Table\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Files\Whitepaper.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
