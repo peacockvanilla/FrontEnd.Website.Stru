@@ -644,13 +644,13 @@ text-transform: uppercase;
 * 06.START PORTFOLIO DESIGN
 * ----------------------------------------------------------------------------------------
 */
-.box{
-    background: #425cbb;
+.box {
+    background: #080808;
     overflow: hidden;
     position: relative;
     -webkit-perspective: 800px;
     perspective: 800px;
-	text-align:center;
+    text-align: center;
 }
 .box img{
     width: 100%;
