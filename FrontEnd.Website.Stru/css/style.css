@@ -516,26 +516,26 @@ padding-top:60px;
 padding-bottom:20px;
 }
 .serviceBox {
-	background: #fff;
-	text-align: center;
-	padding: 0 0 25px;
-	border-top: 5px solid #425cbb;
-	margin-top: 55px;
-	transition: 0.3s;
-	border-radius: 3px;
-	margin-bottom: 40px;
+    background: #fff;
+    text-align: center;
+    padding: 0 0 25px;
+    border-top: 5px solid #080808;
+    margin-top: 55px;
+    transition: 0.3s;
+    border-radius: 3px;
+    margin-bottom: 40px;
 }
 .serviceBox:hover{box-shadow: 0 40px 40px 0 rgba(0,0,0,0.1);}
-.serviceBox .service-icon {
-	width: 130px;
-	height: 130px;
-	line-height: 144px;
-	border-radius: 50%;
-	background: #fff;
-	border: 5px solid #425cbb;
-	margin: -65px auto 0;
-	/* color: #333; */
-}
+    .serviceBox .service-icon {
+        width: 130px;
+        height: 130px;
+        line-height: 144px;
+        border-radius: 50%;
+        background: #fff;
+        border: 5px solid #080808;
+        margin: -65px auto 0;
+        /* color: #333; */
+    }
 .serviceBox .service-icon i{
     color: #333;
     font-size: 40px;
