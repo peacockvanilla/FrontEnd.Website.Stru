@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -65,6 +65,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\favicons\MOCKUP_18Dec17_1522_B41110.png" />
+    <Content Include="img\favicons\MOCKUP_18Dec17_1522_B41110_1 %281%29.jpg" />
+    <Content Include="img\favicons\MOCKUP_18Dec17_1522_B41110_1.jpg" />
+    <Content Include="img\logo\25px.png" />
+    <Content Include="img\logo\40px.png" />
+    <Content Include="NewTimeLine\css\default.min.css" />
+    <Content Include="NewTimeLine\css\frst-timeline-style-3.css" />
+    <Content Include="NewTimeLine\demo\demo.css" />
+    <Content Include="NewTimeLine\demo\reset.css" />
+    <Content Include="NewTimeLine\js\frst-timeline.min.js" />
+    <Content Include="NewTimeLine\js\jquery-3.1.1.min.js" />
+    <Content Include="NewTimeLine\plugins\animate.css" />
+    <Content Include="NewTimeLine\plugins\animate.min.css" />
+    <Content Include="NewTimeLine\plugins\fonts\Simple-Line-Icons.svg" />
+    <Content Include="NewTimeLine\plugins\simple-line-icons.css" />
     <Content Include="packages.config" />
     <Content Include="bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="bootstrap\css\bootstrap-theme.min.css.map" />
@@ -114,6 +129,11 @@
     <Content Include="Table\fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="Table\fonts\Pe-icon-7-stroke.woff" />
     <Content Include="Files\Whitepaper.pdf" />
+    <Content Include="NewTimeLine\plugins\fonts\Simple-Line-Icons.eot" />
+    <Content Include="NewTimeLine\plugins\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="NewTimeLine\plugins\fonts\Simple-Line-Icons.woff" />
+    <Content Include="NewTimeLine\plugins\fonts\Simple-Line-Icons.woff2" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
