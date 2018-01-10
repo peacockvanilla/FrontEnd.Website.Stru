@@ -405,7 +405,7 @@ width: 70px;
 	position:absolute;
 	top:38%; 	
 	width: 100%;
-	text-align: center;
+	text-align: left;/*MJ:1 default center*/
 	padding: 0 2%;
 }
 .slider-info h1 {
@@ -1073,6 +1073,11 @@ width: 48px;
     border: 1px solid #CC181E;
 }
 .f_skype:hover {
+    background: #00AFF0;
+    box-shadow: 0 0 0 0px #00AFF0;
+    border: 1px solid #00AFF0;
+}
+.f_telegram:hover {
     background: #00AFF0;
     box-shadow: 0 0 0 0px #00AFF0;
     border: 1px solid #00AFF0;
